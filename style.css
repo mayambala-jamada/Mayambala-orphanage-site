@@ -1,0 +1,179 @@
+/* 🌐 Reset & Base Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+  margin: 0;
+  padding-top: 80px; /* Prevent navbar overlap */
+}
+
+/* 🎯 Typography */
+h1 {
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #3a7bd5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #3a7bd5;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* 🖼️ Hero Image */
+#home img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+/* 📦 Section Layouts */
+section {
+  padding: 60px 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card small {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+/* 🟨 CTA Button */
+.donate-button {
+  display: inline-block;
+  background-color: #006d77;
+  color: #ffffff;
+  padding: 12px 24px;
+  margin-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+}
+
+.donate-button:hover {
+  background-color: #004c55;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔝 Navbar & Header */
+header {
+  background-color: #3a7bd5;
+  color: white;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 🧭 Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #3a7bd5;
+}
+
+/* 🍔 Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  border-radius: 5px;
+}
+
+/* 📱 Responsive Breakpoint */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    display: none;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

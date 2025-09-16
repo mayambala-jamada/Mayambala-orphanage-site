@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Programs – Mayambala Orphanage Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✅ Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="MoC Logo" width="120" />
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="tour.html">Tour Uganda</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ✅ Programs Introduction -->
+  <main style="padding: 60px 20px; text-align: center;">
+    <h2>📘 Our Programs</h2>
+    <p style="max-width: 700px; margin: 20px auto;">
+      MoC is powered by purpose. Our programs respond to the real needs of orphaned and vulnerable children—creating safe spaces, skills, and systems where they can grow in dignity and confidence.
+    </p>
+  </main>
+
+  <!-- ✅ Programs Grid -->
+  <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; padding: 40px;">
+    
+    <div style="background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3>📚 Education Support</h3>
+      <p>We support over 150 children with school fees, uniforms, and supplies each term—ensuring no child is left behind because of poverty.</p>
+    </div>
+
+    <div style="background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3>🌱 Farming & Nutrition</h3>
+      <p>Through a growing community garden, children and caregivers plant, harvest, and learn sustainable farming skills that support both nutrition and learning.</p>
+    </div>
+
+    <div style="background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3>🎨 Creative Arts for Healing</h3>
+      <p>Children explore identity and joy through music, drawing, dance, storytelling, and theater—often guided by volunteer artists.</p>
+    </div>
+
+    <div style="background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3>🧼 Hygiene & Health Awareness</h3>
+      <p>We conduct hygiene workshops, distribute soap and pads, and work with medical volunteers to ensure every child is clean, confident, and cared for.</p>
+    </div>
+
+    <div style="background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3>🙌 Faith & Mentorship</h3>
+      <p>Every week, children gather for prayer, Bible-based lessons, and heart-to-heart talks—building spiritual resilience and emotional safety.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mayambala Orphanage Center. Programs built on love, purpose, and impact. 🕊️</p>
+  </footer>
+
+  <!-- ✅ Script for Mobile Menu -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>

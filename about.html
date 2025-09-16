@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Mayambala Orphanage Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✅ Navigation Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="MoC Logo" width="120" />
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="tour.html">Tour Uganda</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ✅ Main Section -->
+  <main style="padding: 60px 20px; text-align: center;">
+    <h2>🌱 Our Story</h2>
+    <p style="max-width: 700px; margin: 20px auto;">
+      Mayambala Orphanage Center (MoC) was founded in 2018 in Badongo village, Makindye Division, Kampala. Driven by faith, compassion, and a fierce love for vulnerable children, MoC began as a local response to community hardship—and has grown into a beacon of hope.
+    </p>
+
+    <h3>💡 Our Mission</h3>
+    <p style="max-width: 650px; margin: 20px auto;">
+      To nurture orphaned and vulnerable children by providing shelter, education, mentorship, and creative platforms that empower them to thrive and lead. We believe every child deserves to be seen, heard, and supported.
+    </p>
+
+    <h3>🕊️ Our Values</h3>
+    <ul style="max-width: 600px; margin: 20px auto; list-style: disc; text-align: left;">
+      <li>Compassion over convenience</li>
+      <li>Faith in action</li>
+      <li>Community-driven impact</li>
+      <li>Creativity as a tool for healing and growth</li>
+      <li>Accountability to the lives we serve</li>
+    </ul>
+
+    <h3>📈 Fast Facts</h3>
+    <ul style="max-width: 600px; margin: 20px auto; list-style: disc; text-align: left;">
+      <li>Founded: 2018</li>
+      <li>Location: Badongo village, Makindye Division, Kampala – Uganda</li>
+      <li>Children Supported: Over 150 annually</li>
+      <li>Global Volunteer Network: 5+ countries represented</li>
+      <li>Partnerships: Schools, local farms, youth mentors</li>
+    </ul>
+
+    <h3>🕯️ From the Founder</h3>
+    <blockquote style="font-style: italic; color: #444; max-width: 700px; margin: 30px auto;">
+      “You may not change the whole world — but you can change the world for one child.”<br>
+      <strong>– Jamada Mayambala</strong>
+    </blockquote>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mayambala Orphanage Center. Purpose lives here.</p>
+  </footer>
+
+  <!-- ✅ Scripts -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>

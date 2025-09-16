@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impact – Mayambala Orphanage Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✅ Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="MoC Logo" width="120" />
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="tour.html">Tour Uganda</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ✅ Impact Overview -->
+  <main style="padding: 60px 20px; text-align: center;">
+    <h2>📊 Our Impact</h2>
+    <p style="max-width: 700px; margin: 20px auto;">
+      Every child we reach, every volunteer who serves, and every seed we plant is part of a bigger story—one of transformation, resilience, and hope. Here's what your support has made possible.
+    </p>
+  </main>
+
+  <!-- ✅ Impact Highlights -->
+  <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 40px;">
+    <div style="background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3>🎒 150+ Children in School</h3>
+      <p>Each term, we provide school fees, uniforms, and supplies—ensuring children stay in class and dream big.</p>
+    </div>
+
+    <div style="background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3>🌿 400+ Trees Planted</h3>
+      <p>Our June 2025 Tree Planting Day brought together youth and volunteers to green 3 villages with indigenous trees.</p>
+    </div>
+
+    <div style="background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3>👩‍🍳 20 Women Trained</h3>
+      <p>In May, mothers completed skills training in baking, soap-making, and tailoring—building income and dignity.</p>
+    </div>
+
+    <div style="background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3>🧼 100+ Hygiene Kits Distributed</h3>
+      <p>We provide soap, pads, and hygiene education to promote health and confidence among children and teens.</p>
+    </div>
+
+    <div style="background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <h3>🌍 5+ Countries Represented</h3>
+      <p>Volunteers from around the world have joined MoC—sharing skills, stories, and love across borders.</p>
+    </div>
+  </section>
+
+  <!-- ✅ Call to Action -->
+  <section style="text-align: center; padding: 30px;">
+    <p>💙 Want to be part of the next story?</p>
+    <a href="volunteer.html" class="donate-button" style="margin-top: 10px;">Become a Volunteer</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mayambala Orphanage Center. Impact that echoes. 🕊️</p>
+  </footer>
+
+  <!-- ✅ Mobile Menu Script -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
