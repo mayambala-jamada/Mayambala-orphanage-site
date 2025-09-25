@@ -1,292 +1,158 @@
-/* =====================
-   GENERAL STYLES
-===================== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome To Mayambala Orphanage Center – Uganda Nonprofit Supporting Vulnerable Children</title>
+  <meta name="description" content="MoC is a faith-driven, community-based orphanage in Kampala, Uganda supporting over 150 vulnerable children through education, arts, farming, and mentorship." />
+  <meta name="keywords" content="Uganda orphanage, volunteer in Africa, nonprofit Kampala, child support programs, faith-based outreach, MoC Uganda, RaiseHopeUganda, eco outreach Uganda" />
+  <meta name="author" content="Mayambala Orphanage Center" />
 
-body {
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
-}
+  <!-- Social Sharing -->
+  <meta property="og:title" content="Hope That Sustains | MoC Uganda" />
+  <meta property="og:description" content="Join #RaiseHopeUganda to uplift lives and landscapes through child empowerment and sustainable outreach in Uganda." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hope That Sustains | MoC Uganda" />
+  <meta name="twitter:description" content="Empowering orphaned children while protecting the planet they call home." />
+  <meta name="twitter:image" content="images/hero.jpg" />
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+  <!-- Styles & Branding -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-h1, h2, h3 {
-  color: #1a1a1a;
-}
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="MoC Uganda Logo" />
+        </a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="#" id="openModal">Volunteer</a></li>
+        <li><a href="tour.html">Tour Uganda</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-/* =====================
-   NAVBAR
-===================== */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* navbar above hero */
-}
+  <!-- Main Content -->
+  <main>
 
-.navbar .logo img {
-  max-height: 50px;
-}
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <h1>Empowering Orphaned Children in Uganda</h1>
+      <p>
+        Mayambala Orphanage Center (MoC) is a faith-driven, community-rooted nonprofit providing education, shelter, mentorship, and creative space for over 150 vulnerable children in Kampala.
+      </p>
+      <p>MoC isn’t powered by one—it’s driven by many.</p>
+      <img src="images/hero.jpg" alt="Orphaned children smiling with volunteers in Kampala" />
+    </section>
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-  z-index: 1001; /* ensures links appear above hero */
-}
+    <!-- RaiseHopeUganda Campaign -->
+    <section id="hero-banner" class="homepage-banner text-center">
+      <h2>Hope That Sustains</h2>
+      <p>
+        Join <strong>#RaiseHopeUganda</strong> as we nurture brighter futures—empowering vulnerable children while restoring the planet they call home. Together, we plant more than trees. We plant hope.
+      </p>
+      <a href="donate.html" class="donate-button">Support the Movement</a>
+    </section>
 
-.nav-links li a {
-  padding: 8px 12px;
-  transition: 0.3s;
-  font-weight: 500;
-}
+    <!-- Recent Blog Stories -->
+    <section id="blog" class="text-center">
+      <h2>📰 Recent Stories</h2>
+      <div class="card">
+        <h3>📅 20 Children Enrolled This Term</h3>
+        <p>Thanks to your support, 20 children returned to school this year with books, uniforms, and hope.</p>
+        <small><em>Posted: July 4, 2025</em></small>
+      </div>
 
-.nav-links li a:hover {
-  background-color: #0077cc;
-  color: #fff;
-  border-radius: 5px;
-}
+      <div class="card">
+        <h3>🌱 400 Trees Planted</h3>
+        <p>Volunteers and children planted 400 trees in our green outreach mission across 3 villages.</p>
+        <small><em>Posted: June 22, 2025</em></small>
+      </div>
 
-/* Hamburger for mobile */
-.hamburger {
-  display: none; /* only shows on mobile */
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-  width: 35px;
-  height: 25px;
-  justify-content: center;
-}
+      <div class="card">
+        <h3>👩‍🍳 Women Empowerment Skills</h3>
+        <p>20 caregivers are learning soap-making, baking, and tailoring. They are aiming graduation—earning income and confidence.</p>
+        <small><em>Posted: May 30, 2025</em></small>
+      </div>
+    </section>
 
-.hamburger span {
-  width: 100%;
-  height: 3px;
-  background-color: #333;
-  border-radius: 2px;
-  display: block;
-  transition: all 0.3s ease;
-}
+    <!-- Call to Action -->
+    <section class="text-center">
+      <p>💙 Want to support our mission or join hands?</p>
+      <p>Volunteers aren't helpers—they’re builders of change.</p>
+      <a href="donate.html" class="donate-button">Donate Now</a>
+    </section>
 
-/* Hamburger animation when active */
-.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
+  </main>
 
-.hamburger.active span:nth-child(2) {
-  opacity: 0; /* middle line disappears */
-}
+  <!-- Volunteer Modal -->
+  <div id="volunteerModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Volunteer Sign-Up</h2>
+      <p>Thank you for your interest in volunteering! Please fill out your details and we'll get in touch.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Why you want to volunteer" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mayambala Orphanage Center. Built on faith, fueled by community. 🕊️</p>
+  </footer>
 
-/* =====================
-   HERO SECTION
-===================== */
-.hero-section {
-  padding: 120px 20px 100px 20px; /* space for navbar */
-  text-align: center;
-  position: relative;
-  z-index: 0;
-  background: url('images/hero.jpg') center/cover no-repeat;
-  color: #fff;
-}
+  <!-- Scripts -->
+  <script>
+    // Hamburger Toggle
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
 
-/* Overlay for readability */
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.3);
-  z-index: 0;
-}
+    // Volunteer Modal
+    const openModal = document.getElementById("openModal");
+    const closeModal = document.getElementById("closeModal");
+    const modal = document.getElementById("volunteerModal");
 
-.hero-section h1,
-.hero-section p {
-  position: relative;
-  z-index: 1;
-}
+    openModal.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.style.display = "flex";
+    });
 
-.hero-section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
 
-.hero-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
+    window.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
 
-.hero-section img {
-  border-radius: 10px;
-  margin-top: 20px;
-  position: relative;
-  z-index: 1;
-}
-
-/* =====================
-   BUTTONS
-===================== */
-.donate-button, button {
-  display: inline-block;
-  padding: 12px 25px;
-  background-color: #0077cc;
-  color: #fff;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.donate-button:hover, button:hover {
-  background-color: #005fa3;
-}
-
-/* =====================
-   BLOG CARDS
-===================== */
-#blog {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.card {
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-}
-
-.card h3 {
-  margin-bottom: 10px;
-}
-
-.card p {
-  margin-bottom: 10px;
-  color: #555;
-}
-
-/* =====================
-   CALL TO ACTION
-===================== */
-section.text-center {
-  text-align: center;
-  padding: 30px 20px;
-}
-
-/* =====================
-   MODAL
-===================== */
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.6);
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
-}
-
-.modal-content {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 500px;
-  width: 90%;
-  position: relative;
-  text-align: center;
-}
-
-.close-btn {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.modal-content form input,
-.modal-content form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 12px 0;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-
-.modal-content form button {
-  width: 100%;
-  margin-top: 10px;
-}
-
-/* =====================
-   FOOTER
-===================== */
-footer {
-  background-color: #0077cc;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-/* =====================
-   RESPONSIVE
-===================== */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 65px;
-    right: 0;
-    background-color: #fff;
-    flex-direction: column;
-    width: 200px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    display: none;
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  .nav-links.active {
-    display: flex;
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-}
+</body>
+</html>
