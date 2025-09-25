@@ -8,19 +8,16 @@
 </head>
 <body>
 
-  <!-- ✅ Header Navigation -->
   <header>
     <nav class="navbar">
       <div class="logo">
-        <a href="index.html">
-          <img src="logo.png" alt="MoC Uganda Logo" style="max-height:60px; display:block;" />
-        </a>
+        <a href="index.html"><img src="logo.png" alt="MoC Logo" width="120" /></a>
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="tour.html">Tour Uganda</a></li>
+        <li><a href="tour.html" class="active">Tour Uganda</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
@@ -29,63 +26,53 @@
     </nav>
   </header>
 
-  <!-- ✅ Tour Intro -->
-  <main style="padding: 60px 20px; text-align: center;">
+  <main style="padding:60px 20px; text-align:center;">
     <h2>🌍 Tour Uganda with MoC</h2>
-    <p style="max-width: 700px; margin: 20px auto;">
-      Every weekend, Mayambala Orphanage Center opens the doors to discovery. We take our volunteers and children on unforgettable journeys—exploring Uganda’s vibrant villages, natural wonders, lakes, and heritage sites.
+    <p style="max-width:700px; margin:20px auto;">
+      Every weekend, Mayambala Orphanage Center opens the doors to discovery. We take volunteers and children on unforgettable journeys—exploring Uganda’s vibrant villages, lakes, and heritage sites.
     </p>
     <p><strong>This is more than sightseeing—it’s about connection, joy, and shared culture.</strong></p>
+
+    <section style="padding:40px;">
+      <h3>🗓️ Weekend Adventure Schedule</h3>
+      <table style="width:100%; border-collapse: collapse; margin-top:20px;">
+        <thead>
+          <tr style="background-color:#0077cc; color:#fff;">
+            <th style="padding:10px; border:1px solid #ddd;">Destination</th>
+            <th style="padding:10px; border:1px solid #ddd;">Highlights</th>
+            <th style="padding:10px; border:1px solid #ddd;">Day & Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:10px; border:1px solid #ddd;">Lake Victoria Shores</td>
+            <td style="padding:10px; border:1px solid #ddd;">Picnic, bird watching, storytelling</td>
+            <td style="padding:10px; border:1px solid #ddd;">Saturday, 10AM–2PM</td>
+          </tr>
+          <tr>
+            <td style="padding:10px; border:1px solid #ddd;">Heritage Village Walk</td>
+            <td style="padding:10px; border:1px solid #ddd;">Cultural sites and local traditions</td>
+            <td style="padding:10px; border:1px solid #ddd;">Saturday, 3PM–5PM</td>
+          </tr>
+          <tr>
+            <td style="padding:10px; border:1px solid #ddd;">Faith & Fellowship Visit</td>
+            <td style="padding:10px; border:1px solid #ddd;">Attend a church or community gathering</td>
+            <td style="padding:10px; border:1px solid #ddd;">Sunday Morning</td>
+          </tr>
+          <tr>
+            <td style="padding:10px; border:1px solid #ddd;">Youth Dialogue Circle</td>
+            <td style="padding:10px; border:1px solid #ddd;">Group discussion with volunteers and teens</td>
+            <td style="padding:10px; border:1px solid #ddd;">Sunday, 2PM–4PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </main>
 
-  <!-- ✅ Tour Schedule -->
-  <section style="padding: 40px;">
-    <h3>🗓️ Weekend Adventure Schedule</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Destination</th>
-          <th>Highlights</th>
-          <th>Day & Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lake Victoria Shores</td>
-          <td>Picnic with children, bird watching, storytelling by the water</td>
-          <td>Saturday, 10AM–2PM</td>
-        </tr>
-        <tr>
-          <td>Heritage Village Walk</td>
-          <td>Visit cultural sites and learn about local traditions</td>
-          <td>Saturday, 3PM–5PM</td>
-        </tr>
-        <tr>
-          <td>Faith & Fellowship Visit</td>
-          <td>Attend a local church or community gathering</td>
-          <td>Sunday Morning</td>
-        </tr>
-        <tr>
-          <td>Youth Dialogue Circle</td>
-          <td>Group discussion with volunteers and teens</td>
-          <td>Sunday, 2PM–4PM</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- ✅ Tour Gallery Prompt -->
-  <section style="text-align: center; padding: 20px;">
-    <p>📸 Want to see what the Tour Uganda experience looks like?</p>
-    <p>Check out our photo gallery on the <a href="blog.html">Blog Page</a> or contact us to join the next weekend group!</p>
-  </section>
-
-  <!-- ✅ Footer -->
-  <footer>
+  <footer style="text-align:center; padding:20px;">
     <p>&copy; 2025 Mayambala Orphanage Center. Let Uganda change you. 🕊️</p>
   </footer>
 
-  <!-- ✅ Mobile Menu Script -->
   <script>
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
