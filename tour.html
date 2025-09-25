@@ -8,78 +8,60 @@
 </head>
 <body>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html"><img src="logo.png" alt="MoC Logo" width="120" /></a>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="tour.html" class="active">Tour Uganda</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
-    </nav>
-  </header>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="MoC Logo">
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
+      <li><a href="tour.html">Tour Uganda</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
 
-  <main style="padding:60px 20px; text-align:center;">
-    <h2>🌍 Tour Uganda with MoC</h2>
-    <p style="max-width:700px; margin:20px auto;">
-      Every weekend, Mayambala Orphanage Center opens the doors to discovery. We take volunteers and children on unforgettable journeys—exploring Uganda’s vibrant villages, lakes, and heritage sites.
-    </p>
-    <p><strong>This is more than sightseeing—it’s about connection, joy, and shared culture.</strong></p>
+<section class="hero-section">
+  <h2>🌍 Tour Uganda with MoC</h2>
+  <p>Experience Uganda’s villages, lakes, and cultural heritage with our volunteers and children. More than sightseeing—it’s connection, joy, and shared culture.</p>
+</section>
 
-    <section style="padding:40px;">
-      <h3>🗓️ Weekend Adventure Schedule</h3>
-      <table style="width:100%; border-collapse: collapse; margin-top:20px;">
-        <thead>
-          <tr style="background-color:#0077cc; color:#fff;">
-            <th style="padding:10px; border:1px solid #ddd;">Destination</th>
-            <th style="padding:10px; border:1px solid #ddd;">Highlights</th>
-            <th style="padding:10px; border:1px solid #ddd;">Day & Time</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Lake Victoria Shores</td>
-            <td style="padding:10px; border:1px solid #ddd;">Picnic, bird watching, storytelling</td>
-            <td style="padding:10px; border:1px solid #ddd;">Saturday, 10AM–2PM</td>
-          </tr>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Heritage Village Walk</td>
-            <td style="padding:10px; border:1px solid #ddd;">Cultural sites and local traditions</td>
-            <td style="padding:10px; border:1px solid #ddd;">Saturday, 3PM–5PM</td>
-          </tr>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Faith & Fellowship Visit</td>
-            <td style="padding:10px; border:1px solid #ddd;">Attend a church or community gathering</td>
-            <td style="padding:10px; border:1px solid #ddd;">Sunday Morning</td>
-          </tr>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Youth Dialogue Circle</td>
-            <td style="padding:10px; border:1px solid #ddd;">Group discussion with volunteers and teens</td>
-            <td style="padding:10px; border:1px solid #ddd;">Sunday, 2PM–4PM</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
+<section class="grid-section">
+  <div class="card">
+    <h3>Lake Victoria Shores</h3>
+    <p>Picnic, birdwatching, storytelling by the water.</p>
+  </div>
 
-  <footer style="text-align:center; padding:20px;">
-    <p>&copy; 2025 Mayambala Orphanage Center. Let Uganda change you. 🕊️</p>
-  </footer>
+  <div class="card">
+    <h3>Heritage Village Walk</h3>
+    <p>Visit cultural sites and learn local traditions.</p>
+  </div>
 
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("navLinks");
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
+  <div class="card">
+    <h3>Faith & Fellowship</h3>
+    <p>Attend a local church or community gathering.</p>
+  </div>
+
+  <div class="card">
+    <h3>Youth Dialogue Circle</h3>
+    <p>Group discussions with volunteers and teens.</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Mayambala Orphanage Center. Let Uganda change you. 🕊️</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
+</script>
 
 </body>
 </html>
