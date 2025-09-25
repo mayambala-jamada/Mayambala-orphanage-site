@@ -13,7 +13,7 @@
     <nav class="navbar">
       <div class="logo">
         <a href="index.html">
-          <img src="logo.png" alt="MoC Uganda Logo" />
+          <img src="logo.png" alt="MoC Uganda Logo" style="max-height:60px; display:block;" />
         </a>
       </div>
       <ul class="nav-links" id="navLinks">
@@ -32,7 +32,7 @@
   </header>
 
   <!-- ✅ Main Section -->
-  <main class="fade-in fade-delay-1" style="padding: 80px 20px; max-width: 900px; margin: auto; text-align: center;">
+  <main style="padding: 80px 20px; max-width: 900px; margin: auto; text-align: center;">
     <h1>📊 Our Impact</h1>
     <p>
       Every child we reach, every volunteer who serves, and every seed we plant is part of a bigger story—one of transformation, resilience, and hope. Here's what your support has made possible.
@@ -112,10 +112,4 @@
         e.preventDefault();
         modal.style.display = "flex";
       });
-      closeModal.addEventListener("click", () => modal.style.display = "none");
-      window.addEventListener("click", e => { if(e.target === modal) modal.style.display = "none"; });
-    }
-  </script>
-
-</body>
-</html>
+      closeModal.addEventListener("click", () => modal.style.displa
