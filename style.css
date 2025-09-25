@@ -91,4 +91,182 @@ h1, h2, h3 {
 }
 
 .hamburger.active span:nth-child(3) {
-  transform:
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+.hero-section {
+  padding: 120px 20px 100px 20px;
+  text-align: center;
+  position: relative;
+  background: url('images/hero.jpg') center/cover no-repeat;
+  color: #fff;
+}
+
+/* Overlay */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 0;
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section img {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section img {
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.donate-button, button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #0077cc;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.donate-button:hover, button:hover {
+  background-color: #005fa3;
+}
+
+/* =====================
+   BLOG CARDS
+===================== */
+#blog {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* =====================
+   MODAL
+===================== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-content form input,
+.modal-content form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.modal-content form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  background-color: #0077cc;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: none;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
