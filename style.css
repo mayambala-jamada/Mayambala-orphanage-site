@@ -1,4 +1,6 @@
-/* --- Reset & Base --- */
+/* ===========================
+   Reset & Base Styles
+=========================== */
 * {
   margin: 0;
   padding: 0;
@@ -7,27 +9,28 @@
 }
 
 body {
-  background-color: #fff3e0; /* light vibrant background */
-  color: #333;
   line-height: 1.6;
+  color: #333;
+  background: #fff;
 }
 
-/* --- Navbar --- */
+/* ===========================
+   Navbar
+=========================== */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ff4757; /* shouting red */
   padding: 15px 30px;
-  background: #ff6f00; /* vibrant orange */
-  color: #fff;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .navbar .logo img {
-  max-width: 150px;
-  height: auto;
+  height: 60px;
+  width: auto;
 }
 
 .nav-links {
@@ -37,14 +40,14 @@ body {
 }
 
 .nav-links li a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s;
+  transition: 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #ffd600; /* bright yellow hover */
+  color: #fffa65; /* bright yellow hover */
 }
 
 .hamburger {
@@ -58,140 +61,134 @@ body {
   height: 3px;
   width: 25px;
   background: #fff;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
-/* --- Hero Section --- */
+/* ===========================
+   Hero Section
+=========================== */
 .hero-section {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #ff8a65, #ffccbc);
+  background: linear-gradient(135deg, #ffa502, #ff6348);
   color: #fff;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.hero-section h1,
-.hero-section h2 {
+.hero-section h1 {
   font-size: 2.8rem;
   margin-bottom: 20px;
 }
 
 .hero-section p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto 20px auto;
 }
 
-/* --- Grid Cards --- */
-.grid-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  padding: 40px;
-}
-
-.card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.card h3 {
-  color: #ff6f00;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #555;
-}
-
-/* --- Buttons --- */
+/* ===========================
+   Buttons
+=========================== */
 .donate-button {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #ff6f00;
+  margin: 10px 0;
+  background: #1e90ff; /* vibrant blue */
   color: #fff;
-  font-weight: 700;
+  font-weight: bold;
   text-decoration: none;
-  border-radius: 50px;
-  transition: background 0.3s;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
 .donate-button:hover {
-  background-color: #ffd600;
-  color: #333;
+  background: #ff6348; /* vibrant orange */
 }
 
-/* --- Tables --- */
+/* ===========================
+   Sections
+=========================== */
+section {
+  padding: 60px 20px;
+}
+
+section h2, section h3 {
+  color: #ff4757; /* consistent vibrant red headers */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section p, section ul, section table {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+}
+
+/* ===========================
+   Cards & Tables
+=========================== */
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-th, td {
+table th, table td {
+  border: 1px solid #ddd;
   padding: 12px;
   text-align: left;
-  border: 1px solid #ddd;
 }
 
-th {
-  background-color: #ff6f00;
+table th {
+  background: #ff4757;
   color: #fff;
 }
 
-tr:nth-child(even) {
-  background-color: #ffe0b2;
+table tr:nth-child(even) {
+  background: #f8f8f8;
 }
 
-/* --- Footer --- */
+/* ===========================
+   Footer
+=========================== */
 footer {
+  background: #2f3542;
+  color: #fff;
   text-align: center;
   padding: 25px 20px;
-  background-color: #ff6f00;
-  color: #fff;
-  margin-top: 40px;
 }
 
-/* --- Volunteer / Contact Forms --- */
-form input, form textarea {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #ffccbc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-form button {
-  cursor: pointer;
-  border: none;
-}
-
-/* --- Responsive --- */
+/* ===========================
+   Responsive
+=========================== */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
-    top: 60px;
-    right: -100%;
+    top: 70px;
+    right: 0;
+    background: #ff4757;
     width: 200px;
     flex-direction: column;
-    background-color: #ff6f00;
-    transition: right 0.3s ease;
-    padding: 20px;
+    align-items: center;
+    gap: 15px;
+    display: none;
   }
 
   .nav-links.active {
-    right: 0;
+    display: flex;
   }
 
   .hamburger {
     display: flex;
+  }
+
+  section {
+    padding: 40px 15px;
   }
 }
