@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <!-- ✅ Navigation Header -->
+  <!-- Navigation Header -->
   <header>
     <nav class="navbar">
       <div class="logo">
@@ -16,7 +16,7 @@
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" class="active">About</a></li>
         <li><a href="programs.html">Programs</a></li>
         <li><a href="impact.html">Impact</a></li>
         <li><a href="volunteer.html">Volunteer</a></li>
@@ -24,12 +24,14 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
   </header>
 
-  <!-- ✅ Main Section -->
+  <!-- Main Content -->
   <main style="padding: 60px 20px; text-align: center;">
     <h2>🌱 Our Story</h2>
     <p style="max-width: 700px; margin: 20px auto;">
@@ -66,12 +68,12 @@
     </blockquote>
   </main>
 
-  <!-- ✅ Footer -->
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Mayambala Orphanage Center. Purpose lives here.</p>
   </footer>
 
-  <!-- ✅ Scripts -->
+  <!-- Hamburger Menu Script -->
   <script>
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
