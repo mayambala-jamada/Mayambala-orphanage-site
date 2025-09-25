@@ -8,60 +8,81 @@
 </head>
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="images/logo.png" alt="MoC Logo">
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="volunteer.html">Volunteer</a></li>
-      <li><a href="tour.html">Tour Uganda</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
-</header>
+  <!-- ✅ Navigation Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img src="images/logo.png" alt="MoC Logo" /></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="tour.html">Tour Uganda</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+  </header>
 
-<section class="hero-section">
-  <h2>🌍 Tour Uganda with MoC</h2>
-  <p>Experience Uganda’s villages, lakes, and cultural heritage with our volunteers and children. More than sightseeing—it’s connection, joy, and shared culture.</p>
-</section>
+  <!-- ✅ Tour Overview -->
+  <main>
+    <section style="padding:60px 20px; text-align:center;">
+      <h2>🌍 Tour Uganda with MoC</h2>
+      <p style="max-width:700px; margin:20px auto;">
+        Explore Uganda’s vibrant villages, lakes, and heritage sites with children and volunteers from Mayambala Orphanage Center.
+      </p>
+      <a href="donate.html" class="donate-button">Donate Now</a>
+    </section>
 
-<section class="grid-section">
-  <div class="card">
-    <h3>Lake Victoria Shores</h3>
-    <p>Picnic, birdwatching, storytelling by the water.</p>
-  </div>
+    <!-- ✅ Tour Schedule Table -->
+    <section style="padding:40px; max-width:900px; margin:auto;">
+      <h3>🗓️ Weekend Adventure Schedule</h3>
+      <table style="width:100%; border-collapse: collapse; margin-top:20px;">
+        <thead>
+          <tr style="background-color:#FF5733; color:#fff;">
+            <th style="padding:10px; border:1px solid #ddd;">Destination</th>
+            <th style="padding:10px; border:1px solid #ddd;">Highlights</th>
+            <th style="padding:10px; border:1px solid #ddd;">Day & Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:10px; border:1px solid #ddd;">Lake Victoria Shores</td>
+            <td style="padding:10px; border:1px solid #ddd;">Picnic with children, bird watching, storytelling by the water</td>
+            <td style="padding:10px; border:1px solid #ddd;">Saturday, 10AM–2PM</td>
+          </tr>
+          <tr>
+            <td style="padding:10px; border:1px solid #ddd;">Heritage Village Walk</td>
+            <td style="padding:10px; border:1px solid #ddd;">Visit cultural sites and learn about local traditions</td>
+            <td style="padding:10px; border:1px solid #ddd;">Saturday, 3PM–5PM</td>
+          </tr>
+          <tr>
+            <td style="padding:10px; border:1px solid #ddd;">Faith & Fellowship Visit</td>
+            <td style="padding:10px; border:1px solid #ddd;">Attend a local church or community gathering</td>
+            <td style="padding:10px; border:1px solid #ddd;">Sunday Morning</td>
+          </tr>
+          <tr>
+            <td style="padding:10px; border:1px solid #ddd;">Youth Dialogue Circle</td>
+            <td style="padding:10px; border:1px solid #ddd;">Group discussion with volunteers and teens</td>
+            <td style="padding:10px; border:1px solid #ddd;">Sunday, 2PM–4PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 
-  <div class="card">
-    <h3>Heritage Village Walk</h3>
-    <p>Visit cultural sites and learn local traditions.</p>
-  </div>
+  <!-- ✅ Footer -->
+  <footer>
+    <p>&copy; 2025 Mayambala Orphanage Center. Let Uganda change you. 🕊️</p>
+  </footer>
 
-  <div class="card">
-    <h3>Faith & Fellowship</h3>
-    <p>Attend a local church or community gathering.</p>
-  </div>
-
-  <div class="card">
-    <h3>Youth Dialogue Circle</h3>
-    <p>Group discussions with volunteers and teens.</p>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2025 Mayambala Orphanage Center. Let Uganda change you. 🕊️</p>
-</footer>
-
-<script>
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
-hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
-</script>
+  <!-- ✅ Hamburger Menu Script -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
+  </script>
 
 </body>
 </html>
