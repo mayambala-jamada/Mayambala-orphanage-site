@@ -8,108 +8,67 @@
 </head>
 <body>
 
-  <!-- ✅ Header & Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html">
-          <img src="logo.png" alt="MoC Uganda Logo" style="max-height:60px; display:block;" />
-        </a>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programs.html">Programs</a></li>
-        <li><a href="impact.html">Impact</a></li>
-        <li><a href="#" id="openModal">Volunteer</a></li>
-        <li><a href="tour.html">Tour Uganda</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
-    </nav>
-  </header>
-
-  <!-- ✅ Main Section -->
-  <main style="padding: 80px 20px; max-width: 900px; margin: auto; text-align: center;">
-    <h1>📊 Our Impact</h1>
-    <p>
-      Every child we reach, every volunteer who serves, and every seed we plant is part of a bigger story—one of transformation, resilience, and hope. Here's what your support has made possible.
-    </p>
-
-    <!-- Impact Highlights -->
-    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 40px 0;">
-      <div class="card">
-        <h3>🎒 150+ Children in School</h3>
-        <p>Each term, we provide school fees, uniforms, and supplies—ensuring children stay in class and dream big.</p>
-      </div>
-
-      <div class="card">
-        <h3>🌿 400+ Trees Planted</h3>
-        <p>Our June 2025 Tree Planting Day brought together youth and volunteers to green 3 villages with indigenous trees.</p>
-      </div>
-
-      <div class="card">
-        <h3>👩‍🍳 20 Women Trained</h3>
-        <p>Mothers completed skills training in baking, soap-making, and tailoring—building income and dignity.</p>
-      </div>
-
-      <div class="card">
-        <h3>🧼 100+ Hygiene Kits Distributed</h3>
-        <p>We provide soap, pads, and hygiene education to promote health and confidence among children and teens.</p>
-      </div>
-
-      <div class="card">
-        <h3>🌍 5+ Countries Represented</h3>
-        <p>Volunteers from around the world have joined MoC—sharing skills, stories, and love across borders.</p>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section style="text-align: center; padding: 30px;">
-      <p>💙 Want to be part of the next story?</p>
-      <a href="#" id="openModal" class="donate-button">Become a Volunteer</a>
-    </section>
-  </main>
-
-  <!-- ✅ Volunteer Modal -->
-  <div id="volunteerModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" id="closeModal">&times;</span>
-      <h2>Volunteer Sign-Up</h2>
-      <p>Thank you for your interest in volunteering! Please fill out your details and we'll get in touch.</p>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Why you want to volunteer" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="MoC Logo">
     </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
+      <li><a href="tour.html">Tour Uganda</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+
+<section class="hero-section">
+  <h2>📊 Our Impact</h2>
+  <p>Every child, volunteer, and tree planted is part of a bigger story—transformation, resilience, and hope.</p>
+</section>
+
+<section class="grid-section">
+  <div class="card">
+    <h3>🎒 150+ Children in School</h3>
+    <p>Providing fees, uniforms, and books so children can dream big.</p>
   </div>
 
-  <!-- ✅ Footer -->
-  <footer>
-    <p>&copy; 2025 Mayambala Orphanage Center. Impact that echoes. 🕊️</p>
-  </footer>
+  <div class="card">
+    <h3>🌿 400+ Trees Planted</h3>
+    <p>Volunteers and children greening 3 villages.</p>
+  </div>
 
-  <!-- ✅ Scripts -->
-  <script>
-    // Hamburger toggle
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("navLinks");
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-      hamburger.classList.toggle("active");
-    });
+  <div class="card">
+    <h3>👩‍🍳 20 Women Trained</h3>
+    <p>Skills workshops in baking, soap-making, and tailoring.</p>
+  </div>
 
-    // Volunteer modal
-    const openModal = document.getElementById("openModal");
-    const closeModal = document.getElementById("closeModal");
-    const modal = document.getElementById("volunteerModal");
-    if(openModal && closeModal && modal){
-      openModal.addEventListener("click", e => {
-        e.preventDefault();
-        modal.style.display = "flex";
-      });
-      closeModal.addEventListener("click", () => modal.style.displa
+  <div class="card">
+    <h3>🧼 Hygiene Kits Distributed</h3>
+    <p>Supporting children with wellness essentials.</p>
+  </div>
+
+  <div class="card">
+    <h3>🌍 Global Volunteers</h3>
+    <p>Volunteers from 5+ countries sharing love and skills.</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Mayambala Orphanage Center. Impact that echoes. 🕊️</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
+</script>
+
+</body>
+</html>
