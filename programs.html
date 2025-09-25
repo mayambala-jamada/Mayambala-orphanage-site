@@ -3,72 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Programs – Mayambala Orphanage Center</title>
+  <title>Our Programs – Mayambala Orphanage Center</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img src="images/logo.png" alt="MoC Logo" /></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="tour.html">Tour Uganda</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+  </header>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="images/logo.png" alt="MoC Logo">
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="impact.html">Impact</a></li>
-      <li><a href="volunteer.html">Volunteer</a></li>
-      <li><a href="tour.html">Tour Uganda</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
-</header>
+  <main>
+    <section class="text-center" style="padding:60px 20px;">
+      <h2>📘 Our Programs</h2>
+      <p>We provide education, nutrition, creative arts, hygiene training, and faith-based mentorship to empower children.</p>
+      <a href="donate.html" class="donate-button">Donate Now</a>
+    </section>
+  </main>
 
-<section class="hero-section">
-  <h2>📘 Our Programs</h2>
-  <p>MoC’s programs respond to the real needs of orphaned and vulnerable children—creating safe spaces, skills, and systems to thrive.</p>
-</section>
+  <footer>
+    <p>&copy; 2025 Mayambala Orphanage Center. Programs built on love, purpose, and impact.</p>
+  </footer>
 
-<section class="grid-section">
-  <div class="card">
-    <h3>📚 Education Support</h3>
-    <p>School fees, uniforms, and supplies for over 150 children each term.</p>
-  </div>
-
-  <div class="card">
-    <h3>🌱 Farming & Nutrition</h3>
-    <p>Children learn sustainable farming while growing healthy food for the center.</p>
-  </div>
-
-  <div class="card">
-    <h3>🎨 Creative Arts</h3>
-    <p>Music, dance, painting, storytelling, and theater to heal and inspire.</p>
-  </div>
-
-  <div class="card">
-    <h3>🧼 Hygiene & Health</h3>
-    <p>Workshops, soap distribution, and medical support for children and caregivers.</p>
-  </div>
-
-  <div class="card">
-    <h3>🙌 Faith & Mentorship</h3>
-    <p>Bible-based lessons, prayers, and mentorship sessions for emotional and spiritual growth.</p>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2025 Mayambala Orphanage Center. Programs built on love, purpose, and impact. 🕊️</p>
-</footer>
-
-<script>
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
-hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
-</script>
-
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
+  </script>
 </body>
 </html>
