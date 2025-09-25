@@ -7,12 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
 <header>
   <nav class="navbar">
-    <div class="logo">
-      <img src="images/logo.png" alt="MoC Logo">
-    </div>
+    <div class="logo"><img src="images/logo.png" alt="MoC Logo" /></div>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -22,46 +19,20 @@
       <li><a href="tour.html">Tour Uganda</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </nav>
 </header>
 
-<section class="hero-section">
-  <h2>📊 Our Impact</h2>
-  <p>Every child, volunteer, and tree planted is part of a bigger story—transformation, resilience, and hope.</p>
-</section>
-
-<section class="grid-section">
-  <div class="card">
-    <h3>🎒 150+ Children in School</h3>
-    <p>Providing fees, uniforms, and books so children can dream big.</p>
-  </div>
-
-  <div class="card">
-    <h3>🌿 400+ Trees Planted</h3>
-    <p>Volunteers and children greening 3 villages.</p>
-  </div>
-
-  <div class="card">
-    <h3>👩‍🍳 20 Women Trained</h3>
-    <p>Skills workshops in baking, soap-making, and tailoring.</p>
-  </div>
-
-  <div class="card">
-    <h3>🧼 Hygiene Kits Distributed</h3>
-    <p>Supporting children with wellness essentials.</p>
-  </div>
-
-  <div class="card">
-    <h3>🌍 Global Volunteers</h3>
-    <p>Volunteers from 5+ countries sharing love and skills.</p>
-  </div>
-</section>
+<main>
+  <section class="text-center" style="padding:60px 20px;">
+    <h2>📊 Our Impact</h2>
+    <p>Over 150 children supported, 400+ trees planted, 20 women trained, and international volunteers making a difference.</p>
+    <a href="donate.html" class="donate-button">Donate Now</a>
+  </section>
+</main>
 
 <footer>
-  <p>&copy; 2025 Mayambala Orphanage Center. Impact that echoes. 🕊️</p>
+  <p>&copy; 2025 Mayambala Orphanage Center. Impact that echoes.</p>
 </footer>
 
 <script>
@@ -69,6 +40,5 @@ const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
 </script>
-
 </body>
 </html>
