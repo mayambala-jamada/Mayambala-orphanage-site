@@ -35,7 +35,7 @@ h1, h2, h3 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1000; /* navbar above hero */
 }
 
 .navbar .logo img {
@@ -46,6 +46,7 @@ h1, h2, h3 {
   display: flex;
   list-style: none;
   gap: 25px;
+  z-index: 1001; /* ensures links appear above hero */
 }
 
 .nav-links li a {
@@ -62,27 +63,51 @@ h1, h2, h3 {
 
 /* Hamburger for mobile */
 .hamburger {
-  display: none;
+  display: none; /* only shows on mobile */
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  width: 35px;  /* fix size */
+  height: 25px;
+  justify-content: center;
 }
 
 .hamburger span {
-  width: 25px;
+  width: 100%;
   height: 3px;
   background-color: #333;
   border-radius: 2px;
+  display: block;
 }
 
 /* =====================
    HERO SECTION
 ===================== */
 .hero-section {
-  padding: 100px 20px;
+  padding: 120px 20px 100px 20px; /* add top padding for navbar */
   text-align: center;
+  position: relative; /* stacking context for overlay */
+  z-index: 0;
   background: url('images/hero.jpg') center/cover no-repeat;
   color: #fff;
+}
+
+/* Optional overlay for text readability */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 0;
+}
+
+.hero-section h1,
+.hero-section p {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-section h1 {
@@ -98,6 +123,8 @@ h1, h2, h3 {
 .hero-section img {
   border-radius: 10px;
   margin-top: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 /* =====================
@@ -173,7 +200,7 @@ section.text-center {
   background-color: rgba(0,0,0,0.6);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 2000; /* above everything */
 }
 
 .modal-content {
@@ -194,7 +221,6 @@ section.text-center {
   cursor: pointer;
 }
 
-/* Form inside modal */
 .modal-content form input,
 .modal-content form textarea {
   width: 100%;
