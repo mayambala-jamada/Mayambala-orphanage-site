@@ -8,16 +8,20 @@
 </head>
 <body>
 
-  <!-- ✅ Navigation Header -->
+  <!-- ✅ Header & Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="images/logo.png" alt="MoC Logo" width="120" />
+        <a href="index.html">
+          <img src="logo.png" alt="MoC Uganda Logo" />
+        </a>
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="#" id="openModal">Volunteer</a></li>
         <li><a href="tour.html">Tour Uganda</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -28,19 +32,19 @@
   </header>
 
   <!-- ✅ Main Section -->
-  <main style="padding: 60px 20px; text-align: center;">
-    <h2>🌱 Our Story</h2>
-    <p style="max-width: 700px; margin: 20px auto;">
+  <main class="fade-in fade-delay-1" style="padding: 80px 20px; text-align: center; max-width: 900px; margin: auto;">
+    <h1>🌱 Our Story</h1>
+    <p>
       Mayambala Orphanage Center (MoC) was founded in 2018 in Badongo village, Makindye Division, Kampala. Driven by faith, compassion, and a fierce love for vulnerable children, MoC began as a local response to community hardship—and has grown into a beacon of hope.
     </p>
 
-    <h3>💡 Our Mission</h3>
-    <p style="max-width: 650px; margin: 20px auto;">
+    <h2>💡 Our Mission</h2>
+    <p>
       To nurture orphaned and vulnerable children by providing shelter, education, mentorship, and creative platforms that empower them to thrive and lead. We believe every child deserves to be seen, heard, and supported.
     </p>
 
-    <h3>🕊️ Our Values</h3>
-    <ul style="max-width: 600px; margin: 20px auto; list-style: disc; text-align: left;">
+    <h2>🕊️ Our Values</h2>
+    <ul style="list-style: disc; text-align: left;">
       <li>Compassion over convenience</li>
       <li>Faith in action</li>
       <li>Community-driven impact</li>
@@ -48,8 +52,8 @@
       <li>Accountability to the lives we serve</li>
     </ul>
 
-    <h3>📈 Fast Facts</h3>
-    <ul style="max-width: 600px; margin: 20px auto; list-style: disc; text-align: left;">
+    <h2>📈 Fast Facts</h2>
+    <ul style="list-style: disc; text-align: left;">
       <li>Founded: 2018</li>
       <li>Location: Badongo village, Makindye Division, Kampala – Uganda</li>
       <li>Children Supported: Over 150 annually</li>
@@ -57,24 +61,55 @@
       <li>Partnerships: Schools, local farms, youth mentors</li>
     </ul>
 
-    <h3>🕯️ From the Founder</h3>
-    <blockquote style="font-style: italic; color: #444; max-width: 700px; margin: 30px auto;">
+    <h2>🕯️ From the Founder</h2>
+    <blockquote style="font-style: italic; color: #444;">
       “You may not change the whole world — but you can change the world for one child.”<br>
       <strong>– Jamada Mayambala</strong>
     </blockquote>
   </main>
 
+  <!-- ✅ Volunteer Modal -->
+  <div id="volunteerModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Volunteer Sign-Up</h2>
+      <p>Thank you for your interest in volunteering! Please fill out your details and we'll get in touch.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Why you want to volunteer" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ✅ Footer -->
   <footer>
-    <p>&copy; 2025 Mayambala Orphanage Center. Purpose lives here.</p>
+    <p>&copy; 2025 Mayambala Orphanage Center. Built on faith, fueled by community. 🕊️</p>
   </footer>
 
   <!-- ✅ Scripts -->
   <script>
+    // Hamburger toggle
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("active");
+      hamburger.classList.toggle("active");
     });
+
+    // Volunteer modal
+    const openModal = document.getElementById("openModal");
+    const closeModal = document.getElementById("closeModal");
+    const modal = document.getElementById("volunteerModal");
+    if(openModal && closeModal && modal){
+      openModal.addEventListener("click", e => {
+        e.preventDefault();
+        modal.style.display = "flex";
+      });
+      closeModal.addEventListener("click", () => modal.style.display = "none");
+      window.addEventListener("click", e => { if(e.target === modal) modal.style.display = "none"; });
+    }
   </script>
 
 </body>
