@@ -8,51 +8,58 @@
 </head>
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="images/logo.png" alt="MoC Logo">
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="volunteer.html">Volunteer</a></li>
-      <li><a href="tour.html">Tour Uganda</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
-</header>
+  <!-- ✅ Navigation Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img src="images/logo.png" alt="MoC Logo" /></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="tour.html">Tour Uganda</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+  </header>
 
-<section class="hero-section">
-  <h2>📞 Contact Mayambala Orphanage Center</h2>
-  <p>We’d love to hear from you through WhatsApp, email, or the form below.</p>
-  <p><strong>WhatsApp:</strong> <a href="https://wa.me/256788944163" target="_blank">+256 788 944 163</a></p>
-  <p><strong>Email:</strong> <a href="mailto:mayambalaorphanagecenter@gmail.com">mayambalaorphanagecenter@gmail.com</a></p>
-</section>
+  <!-- ✅ Contact Overview -->
+  <main>
+    <section style="text-align:center; padding:60px 20px;">
+      <h2 style="color:#FF5733;">📞 Contact Mayambala Orphanage Center</h2>
+      <p>We’d love to hear from you—through WhatsApp, email, or the form below.</p>
 
-<section id="contact-form" style="max-width: 600px; margin: auto; padding: 40px;">
-  <h2>📬 Send Us a Message</h2>
-  <form action="#" method="post" style="display:flex; flex-direction:column; gap:15px;">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <input type="tel" name="phone" placeholder="Your Phone Number" />
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit" class="donate-button">Send Message</button>
-  </form>
-</section>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/256788944163" target="_blank">+256 788 944 163</a></p>
+      <p><strong>Email:</strong> <a href="mailto:mayambalaorphanagecenter@gmail.com">mayambalaorphanagecenter@gmail.com</a></p>
+      <a href="donate.html" class="donate-button">Donate Now</a>
+    </section>
 
-<footer>
-  <p>&copy; 2025 Mayambala Orphanage Center. Purpose lives here. 🕊️</p>
-</footer>
+    <!-- ✅ Contact Form -->
+    <section style="padding:40px; max-width:600px; margin:auto;">
+      <h2 style="color:#33C1FF;">📬 Send Us a Message</h2>
+      <form action="#" method="post" style="display:flex; flex-direction:column; gap:15px; background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+        <input type="text" name="name" placeholder="Your Name" required style="padding:10px; border-radius:5px; border:1px solid #ccc;" />
+        <input type="email" name="email" placeholder="Your Email" required style="padding:10px; border-radius:5px; border:1px solid #ccc;" />
+        <input type="tel" name="phone" placeholder="Your Phone Number" style="padding:10px; border-radius:5px; border:1px solid #ccc;" />
+        <textarea name="message" placeholder="Your Message" rows="5" required style="padding:10px; border-radius:5px; border:1px solid #ccc;"></textarea>
+        <button type="submit" class="donate-button">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-<script>
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
-hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
-</script>
+  <!-- ✅ Footer -->
+  <footer>
+    <p>&copy; 2025 Mayambala Orphanage Center. Purpose lives here. 🕊️</p>
+  </footer>
+
+  <!-- ✅ Hamburger Menu Script -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
+  </script>
 
 </body>
 </html>
