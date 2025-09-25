@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Welcome To Mayambala Orphanage Center – Uganda Nonprofit Supporting Vulnerable Children</title>
-
   <meta name="description" content="MoC is a faith-driven, community-based orphanage in Kampala, Uganda supporting over 150 vulnerable children through education, arts, farming, and mentorship." />
   <meta name="keywords" content="Uganda orphanage, volunteer in Africa, nonprofit Kampala, child support programs, faith-based outreach, MoC Uganda, RaiseHopeUganda, eco outreach Uganda" />
   <meta name="author" content="Mayambala Orphanage Center" />
 
-  <!-- 🫂 Social Sharing -->
+  <!-- Social Sharing -->
   <meta property="og:title" content="Hope That Sustains | MoC Uganda" />
   <meta property="og:description" content="Join #RaiseHopeUganda to uplift lives and landscapes through child empowerment and sustainable outreach in Uganda." />
   <meta property="og:image" content="images/hero.jpg" />
@@ -21,19 +19,19 @@
   <meta name="twitter:description" content="Empowering orphaned children while protecting the planet they call home." />
   <meta name="twitter:image" content="images/hero.jpg" />
 
-  <!-- 🎨 Styles & Branding -->
+  <!-- Styles & Branding -->
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- 🔝 Navigation -->
+  <!-- Navigation -->
   <header>
     <nav class="navbar">
       <div class="logo">
         <a href="index.html">
-          <img src="logo.png" alt="MoC Uganda Logo" width="100" style="vertical-align: middle;" />
+          <img src="logo.png" alt="MoC Uganda Logo" width="100" />
         </a>
       </div>
       <ul class="nav-links" id="navLinks">
@@ -46,14 +44,18 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </nav>
   </header>
 
-  <!-- 🌍 Hero Section -->
+  <!-- Main Content -->
   <main>
-    <section id="home" style="padding: 100px 20px; text-align: center;">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section" style="padding: 100px 20px; text-align: center;">
       <h1>Empowering Orphaned Children in Uganda</h1>
       <p style="font-size: 1.2rem; margin-top: 10px;">
         Mayambala Orphanage Center (MoC) is a faith-driven, community-rooted nonprofit providing education, shelter, mentorship, and creative space for over 150 vulnerable children in Kampala.
@@ -62,7 +64,7 @@
       <img src="images/hero.jpg" alt="Orphaned children smiling with volunteers in Kampala" style="width:100%; max-width: 700px; border-radius: 10px; margin-top: 20px;" />
     </section>
 
-    <!-- 🌱 RaiseHopeUganda Campaign -->
+    <!-- RaiseHopeUganda Campaign -->
     <section id="hero-banner" class="homepage-banner" style="padding: 80px 20px; text-align: center; background-color: #f3f3f3;">
       <h2>Hope That Sustains</h2>
       <p>
@@ -71,7 +73,7 @@
       <a href="donate.html" class="donate-button">Support the Movement</a>
     </section>
 
-    <!-- 📰 Recent Blog Stories -->
+    <!-- Recent Blog Stories -->
     <section id="blog" style="padding: 60px 20px;">
       <h2>📰 Recent Stories</h2>
 
@@ -94,15 +96,16 @@
       </div>
     </section>
 
-    <!-- 🤝 Call to Action -->
+    <!-- Call to Action -->
     <section style="text-align: center; padding: 30px;">
       <p>💙 Want to support our mission or join hands?</p>
       <p>Volunteers aren't helpers—they’re builders of change.</p>
       <a href="donate.html" class="donate-button">Donate Now</a>
     </section>
+
   </main>
 
-  <!-- 🌟 Volunteer Modal -->
+  <!-- Volunteer Modal -->
   <div id="volunteerModal" class="modal">
     <div class="modal-content">
       <span class="close-btn" id="closeModal">&times;</span>
@@ -117,19 +120,21 @@
     </div>
   </div>
 
-  <!-- 🧭 Footer -->
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Mayambala Orphanage Center. Built on faith, fueled by community. 🕊️</p>
   </footer>
 
-  <!-- 🍔 Hamburger & Modal Script -->
+  <!-- Scripts -->
   <script>
+    // Hamburger Toggle
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("active");
     });
 
+    // Volunteer Modal
     const openModal = document.getElementById("openModal");
     const closeModal = document.getElementById("closeModal");
     const modal = document.getElementById("volunteerModal");
@@ -149,5 +154,6 @@
       }
     });
   </script>
+
 </body>
 </html>
