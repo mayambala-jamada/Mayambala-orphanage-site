@@ -14,14 +14,8 @@ body {
   background-color: #fff;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h1, h2, h3 {
-  color: #1a1a1a;
-}
+a { text-decoration: none; color: inherit; }
+h1,h2,h3 { color: #1a1a1a; }
 
 /* =====================
    NAVBAR
@@ -35,18 +29,15 @@ h1, h2, h3 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
 }
 
-.navbar .logo img {
-  max-height: 50px;
-}
+.navbar .logo img { max-height: 50px; }
 
 .nav-links {
   display: flex;
   list-style: none;
   gap: 25px;
-  z-index: 1001;
 }
 
 .nav-links li a {
@@ -67,23 +58,18 @@ h1, h2, h3 {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
-  width: 35px;
-  height: 25px;
-  justify-content: center;
 }
 
 .hamburger span {
-  width: 100%;
+  width: 25px;
   height: 3px;
   background-color: #333;
   border-radius: 2px;
-  display: block;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
-/* Hamburger animation when active */
 .hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px,5px);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -91,7 +77,7 @@ h1, h2, h3 {
 }
 
 .hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5px,-5px);
 }
 
 /* =====================
@@ -105,14 +91,11 @@ h1, h2, h3 {
   color: #fff;
 }
 
-/* Overlay */
 .hero-section::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top:0; left:0;
+  width:100%; height:100%;
   background: rgba(0,0,0,0.3);
   z-index: 0;
 }
@@ -124,10 +107,7 @@ h1, h2, h3 {
   z-index: 1;
 }
 
-.hero-section img {
-  border-radius: 10px;
-  margin-top: 20px;
-}
+.hero-section img { border-radius: 10px; margin-top: 20px; }
 
 /* =====================
    BUTTONS
@@ -172,14 +152,8 @@ h1, h2, h3 {
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
-.card h3 {
-  margin-bottom: 10px;
-}
-
-.card p {
-  margin-bottom: 10px;
-  color: #555;
-}
+.card h3 { margin-bottom: 10px; }
+.card p { margin-bottom: 10px; color: #555; }
 
 /* =====================
    MODAL
@@ -187,10 +161,8 @@ h1, h2, h3 {
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top:0; left:0;
+  width:100%; height:100%;
   background-color: rgba(0,0,0,0.6);
   justify-content: center;
   align-items: center;
@@ -209,8 +181,7 @@ h1, h2, h3 {
 
 .close-btn {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 15px; right: 20px;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -225,10 +196,7 @@ h1, h2, h3 {
   font-size: 1rem;
 }
 
-.modal-content form button {
-  width: 100%;
-  margin-top: 10px;
-}
+.modal-content form button { width: 100%; margin-top: 10px; }
 
 /* =====================
    FOOTER
@@ -239,6 +207,19 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+/* =====================
+   ANIMATIONS
+===================== */
+@keyframes fadeInUp {
+  0% { opacity:0; transform: translateY(20px); }
+  100% { opacity:1; transform: translateY(0); }
+}
+
+.fade-in { opacity:0; animation: fadeInUp 1s forwards; animation-play-state: paused; }
+.fade-delay-1 { animation-delay:0.3s; }
+.fade-delay-2 { animation-delay:0.6s; }
+.fade-delay-3 { animation-delay:0.9s; }
 
 /* =====================
    RESPONSIVE
@@ -260,13 +241,6 @@ footer {
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
-  .nav-links.active {
-    display: flex;
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  .hamburger {
-    display: flex;
-  }
+  .nav-links.active { display:flex; transform:translateX(0); opacity:1; }
+  .hamburger { display:flex; }
 }
