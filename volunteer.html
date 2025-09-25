@@ -8,88 +8,67 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html"><img src="logo.png" alt="MoC Logo" width="120" /></a>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="programs.html">Programs</a></li>
-        <li><a href="impact.html">Impact</a></li>
-        <li><a href="volunteer.html" class="active">Volunteer</a></li>
-        <li><a href="tour.html">Tour Uganda</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
-    </nav>
-  </header>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="MoC Logo">
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="impact.html">Impact</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
+      <li><a href="tour.html">Tour Uganda</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
 
-  <main style="padding:60px 20px; text-align:center;">
-    <section>
-      <h2>🌟 Become a Volunteer with MoC</h2>
-      <p style="max-width:700px; margin:20px auto;">
-        Join a family of change-makers. Volunteers empower vulnerable children, uplift communities, and discover the heartbeat of Uganda. Whether you teach, farm, paint, or explore—you belong here.
-      </p>
-      <p><strong>“You may not change the whole world — but you can change the world for one child.”</strong><br><em>– Jamada Mayambala</em></p>
-    </section>
+<section class="hero-section">
+  <h2>🌟 Become a Volunteer</h2>
+  <p>Join a family of change-makers. Empower children and uplift communities in Uganda.</p>
+</section>
 
-    <section style="padding:40px;">
-      <h3>📅 Volunteer Roles & Weekly Schedule</h3>
-      <table style="width:100%; border-collapse: collapse; margin-top:20px;">
-        <thead>
-          <tr style="background-color:#0077cc; color:#fff;">
-            <th style="padding:10px; border:1px solid #ddd;">Role</th>
-            <th style="padding:10px; border:1px solid #ddd;">Description</th>
-            <th style="padding:10px; border:1px solid #ddd;">Time Slot</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Teaching Assistant</td>
-            <td style="padding:10px; border:1px solid #ddd;">Help children with reading, writing, and basic subjects.</td>
-            <td style="padding:10px; border:1px solid #ddd;">Mon–Fri, 9AM–12PM</td>
-          </tr>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Creative Arts Mentor</td>
-            <td style="padding:10px; border:1px solid #ddd;">Lead workshops in art, music, dance, or drama.</td>
-            <td style="padding:10px; border:1px solid #ddd;">Wed & Fri, 2PM–4PM</td>
-          </tr>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Farming & Gardening Helper</td>
-            <td style="padding:10px; border:1px solid #ddd;">Assist with planting, harvesting, and garden care.</td>
-            <td style="padding:10px; border:1px solid #ddd;">Mon–Thu, 8AM–10AM</td>
-          </tr>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Hygiene & Health Awareness</td>
-            <td style="padding:10px; border:1px solid #ddd;">Support sessions on sanitation, wellness, and first aid.</td>
-            <td style="padding:10px; border:1px solid #ddd;">Flexible Days</td>
-          </tr>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">🌍 Weekend Cultural Tour Companion</td>
-            <td style="padding:10px; border:1px solid #ddd;">Explore Uganda with children & volunteers. Visit lakes, villages, and heritage sites.</td>
-            <td style="padding:10px; border:1px solid #ddd;">Sat–Sun, 9AM–5PM</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
+<section class="grid-section">
+  <div class="card">
+    <h3>Teaching Assistant</h3>
+    <p>Help children with reading, writing, and basic subjects.</p>
+  </div>
 
-  <footer style="text-align:center; padding:20px;">
-    <p>&copy; 2025 Mayambala Orphanage Center. Volunteers power change. 🕊️</p>
-  </footer>
+  <div class="card">
+    <h3>Creative Arts Mentor</h3>
+    <p>Lead workshops in art, music, dance, or drama.</p>
+  </div>
 
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("navLinks");
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
+  <div class="card">
+    <h3>Farming & Gardening Helper</h3>
+    <p>Assist with planting, harvesting, and garden care.</p>
+  </div>
+
+  <div class="card">
+    <h3>Hygiene & Health Awareness</h3>
+    <p>Support sanitation and wellness sessions.</p>
+  </div>
+
+  <div class="card">
+    <h3>🌍 Weekend Cultural Tour Companion</h3>
+    <p>Explore Uganda with children & volunteers.</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Mayambala Orphanage Center. Volunteers power change. 🕊️</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
+</script>
 
 </body>
 </html>
