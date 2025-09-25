@@ -56,16 +56,16 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-      <h1>Empowering Orphaned Children in Uganda</h1>
-      <p>
+      <h1 class="fade-in fade-delay-1">Empowering Orphaned Children in Uganda</h1>
+      <p class="fade-in fade-delay-2">
         Mayambala Orphanage Center (MoC) is a faith-driven, community-rooted nonprofit providing education, shelter, mentorship, and creative space for over 150 vulnerable children in Kampala.
       </p>
-      <p>MoC isn’t powered by one—it’s driven by many.</p>
-      <img src="images/hero.jpg" alt="Orphaned children smiling with volunteers in Kampala" />
+      <p class="fade-in fade-delay-3">MoC isn’t powered by one—it’s driven by many.</p>
+      <img src="images/hero.jpg" alt="Orphaned children smiling with volunteers in Kampala" class="fade-in fade-delay-3" />
     </section>
 
     <!-- RaiseHopeUganda Campaign -->
-    <section id="hero-banner" class="homepage-banner text-center">
+    <section id="hero-banner" class="homepage-banner text-center fade-in fade-delay-1">
       <h2>Hope That Sustains</h2>
       <p>
         Join <strong>#RaiseHopeUganda</strong> as we nurture brighter futures—empowering vulnerable children while restoring the planet they call home. Together, we plant more than trees. We plant hope.
@@ -75,20 +75,21 @@
 
     <!-- Recent Blog Stories -->
     <section id="blog" class="text-center">
-      <h2>📰 Recent Stories</h2>
-      <div class="card">
+      <h2 class="fade-in fade-delay-1">📰 Recent Stories</h2>
+
+      <div class="card fade-in fade-delay-1">
         <h3>📅 20 Children Enrolled This Term</h3>
         <p>Thanks to your support, 20 children returned to school this year with books, uniforms, and hope.</p>
         <small><em>Posted: July 4, 2025</em></small>
       </div>
 
-      <div class="card">
+      <div class="card fade-in fade-delay-2">
         <h3>🌱 400 Trees Planted</h3>
         <p>Volunteers and children planted 400 trees in our green outreach mission across 3 villages.</p>
         <small><em>Posted: June 22, 2025</em></small>
       </div>
 
-      <div class="card">
+      <div class="card fade-in fade-delay-3">
         <h3>👩‍🍳 Women Empowerment Skills</h3>
         <p>20 caregivers are learning soap-making, baking, and tailoring. They are aiming graduation—earning income and confidence.</p>
         <small><em>Posted: May 30, 2025</em></small>
@@ -96,7 +97,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="text-center">
+    <section class="text-center fade-in fade-delay-1">
       <p>💙 Want to support our mission or join hands?</p>
       <p>Volunteers aren't helpers—they’re builders of change.</p>
       <a href="donate.html" class="donate-button">Donate Now</a>
@@ -153,6 +154,19 @@
         modal.style.display = "none";
       }
     });
+
+    // Scroll reveal animations
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
   </script>
 
 </body>
