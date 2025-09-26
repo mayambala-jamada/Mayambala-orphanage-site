@@ -11,9 +11,7 @@
   <!-- Navigation -->
   <header>
     <nav class="navbar">
-      <div class="logo">
-        <img src="images/logo.png" alt="MoC Logo" />
-      </div>
+      <div class="logo"><img src="images/logo.png" alt="MoC Logo" /></div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -23,57 +21,37 @@
         <li><a href="tour.html">Tour Uganda</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main>
-    <section class="text-center" style="padding: 60px 20px;">
+    <section class="content-section">
       <h2>🌱 Our Story</h2>
-      <p>Mayambala Orphanage Center (MoC) was founded in 2018 in Badongo village, Makindye Division, Kampala. Driven by faith, compassion, and love for vulnerable children, MoC has grown into a beacon of hope.</p>
+      <p>Founded in 2018, MoC began as a local response to community hardship and now supports over 150 children annually.</p>
 
-      <h3>💡 Our Mission</h3>
-      <p>To nurture orphaned and vulnerable children by providing shelter, education, mentorship, and creative platforms that empower them to thrive and lead.</p>
+      <h3>💡 Mission</h3>
+      <p>To nurture orphaned children with education, mentorship, and creative platforms for growth.</p>
 
-      <h3>🕊️ Our Values</h3>
+      <h3>🕊️ Values</h3>
       <ul>
         <li>Compassion over convenience</li>
         <li>Faith in action</li>
         <li>Community-driven impact</li>
-        <li>Creativity as a tool for healing</li>
-        <li>Accountability to the lives we serve</li>
+        <li>Creativity as healing</li>
+        <li>Accountability to children</li>
       </ul>
-
-      <h3>📈 Fast Facts</h3>
-      <ul>
-        <li>Founded: 2018</li>
-        <li>Children Supported: 150+</li>
-        <li>Global Volunteer Network: 5+ countries</li>
-        <li>Partnerships: Schools, local farms, mentors</li>
-      </ul>
-
-      <blockquote>
-        “You may not change the whole world — but you can change the world for one child.”<br>
-        <strong>– Jamada Mayambala</strong>
-      </blockquote>
-
-      <a href="donate.html" class="donate-button">Donate Now</a>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Mayambala Orphanage Center. Purpose lives here.</p>
+    <p>&copy; 2025 Mayambala Orphanage Center.</p>
   </footer>
 
-  <!-- Scripts -->
   <script>
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
-    hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
+    hamburger.addEventListener("click", () => { navLinks.classList.toggle("active"); });
   </script>
 
 </body>
