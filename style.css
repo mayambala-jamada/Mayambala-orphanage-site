@@ -1,55 +1,65 @@
-/* ===========================
-   Reset & Base Styles
-=========================== */
+/* =========================
+   General Reset & Fonts
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
+  background-color: #fff0f5; /* light, bright background */
   color: #333;
-  background: #fff;
 }
 
-/* ===========================
-   Navbar
-=========================== */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ff4757; /* shouting red */
-  padding: 15px 30px;
+/* =========================
+   Header / Navbar
+========================= */
+header {
+  background-color: #ff4500; /* bright orange */
+  padding: 10px 20px;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar .logo img {
-  height: 60px;
-  width: auto;
+  width: 120px;
+  height: auto;
+  display: block;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  list-style: none;
 }
 
 .nav-links li a {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
   font-weight: 600;
-  transition: 0.3s;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #fffa65; /* bright yellow hover */
+  background-color: #fff;
+  color: #ff4500;
+  border-radius: 5px;
 }
 
+/* =========================
+   Hamburger Menu (Mobile)
+========================= */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -58,126 +68,22 @@ body {
 }
 
 .hamburger span {
-  height: 3px;
   width: 25px;
-  background: #fff;
-  border-radius: 3px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
 }
 
-/* ===========================
-   Hero Section
-=========================== */
-.hero-section {
-  background: linear-gradient(135deg, #ffa502, #ff6348);
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero-section h1 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-}
-
-.hero-section p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 20px auto;
-}
-
-/* ===========================
-   Buttons
-=========================== */
-.donate-button {
-  display: inline-block;
-  padding: 12px 25px;
-  margin: 10px 0;
-  background: #1e90ff; /* vibrant blue */
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.donate-button:hover {
-  background: #ff6348; /* vibrant orange */
-}
-
-/* ===========================
-   Sections
-=========================== */
-section {
-  padding: 60px 20px;
-}
-
-section h2, section h3 {
-  color: #ff4757; /* consistent vibrant red headers */
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-section p, section ul, section table {
-  max-width: 800px;
-  margin: 0 auto 20px auto;
-}
-
-/* ===========================
-   Cards & Tables
-=========================== */
-.card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-table th, table td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: left;
-}
-
-table th {
-  background: #ff4757;
-  color: #fff;
-}
-
-table tr:nth-child(even) {
-  background: #f8f8f8;
-}
-
-/* ===========================
-   Footer
-=========================== */
-footer {
-  background: #2f3542;
-  color: #fff;
-  text-align: center;
-  padding: 25px 20px;
-}
-
-/* ===========================
-   Responsive
-=========================== */
+/* Responsive */
 @media (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: #ff4757;
-    width: 200px;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
     display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ff6347; /* tomato */
+    position: absolute;
+    top: 60px;
+    left: 0;
   }
 
   .nav-links.active {
@@ -187,8 +93,179 @@ footer {
   .hamburger {
     display: flex;
   }
-
-  section {
-    padding: 40px 15px;
-  }
 }
+
+/* =========================
+   Hero Section
+========================= */
+.hero-section {
+  background-color: #ffe4e1; /* soft pink background */
+  color: #222;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #ff4500; /* orange */
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero-section img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   Homepage Banner / Call-to-Action
+========================= */
+.homepage-banner {
+  background-color: #00bfff; /* bright sky blue */
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.homepage-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.homepage-banner p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.donate-button {
+  background-color: #ff4500; /* bright orange */
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.donate-button:hover {
+  background-color: #ff6347; /* tomato */
+}
+
+/* =========================
+   Cards (Blog, Programs, Impact)
+========================= */
+.card {
+  background-color: #fff8dc; /* corn silk */
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #ff4500;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.card small {
+  color: #555;
+}
+
+/* =========================
+   Tables
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #ff4500;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background-color: #ff4500;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* =========================
+   Forms
+========================= */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* =========================
+   Modal (Volunteer)
+========================= */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* =========================
+   Utility
+========================= */
+.text-center {
+  text-align: center;
+}
+
