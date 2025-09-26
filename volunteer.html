@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <!-- ✅ Navigation Header -->
+  <!-- Navigation -->
   <header>
     <nav class="navbar">
       <div class="logo"><img src="images/logo.png" alt="MoC Logo" /></div>
@@ -25,68 +25,54 @@
     </nav>
   </header>
 
-  <!-- ✅ Volunteer Section -->
   <main>
-    <section style="padding:60px 20px; text-align:center;">
+    <section class="content-section">
       <h2>🌟 Become a Volunteer with MoC</h2>
-      <p style="max-width:700px; margin:20px auto;">
-        Join a family of change-makers. At Mayambala Orphanage Center, volunteers empower vulnerable children, uplift communities, and discover the heartbeat of Uganda.
-      </p>
-      <a href="donate.html" class="donate-button">Donate Now</a>
-    </section>
+      <p>Join a family of change-makers. Volunteers empower vulnerable children, uplift communities, and explore Uganda.</p>
+      <p><strong>“You may not change the whole world — but you can change the world for one child.”</strong><br><em>– Jamada Mayambala</em></p>
 
-    <!-- ✅ Volunteer Roles -->
-    <section style="padding:40px; max-width:900px; margin:auto;">
-      <h3>📅 Volunteer Roles & Weekly Schedule</h3>
-      <table style="width:100%; border-collapse: collapse; margin-top:20px;">
-        <thead>
-          <tr style="background-color:#FF5733; color:#fff;">
-            <th style="padding:10px; border:1px solid #ddd;">Role</th>
-            <th style="padding:10px; border:1px solid #ddd;">Description</th>
-            <th style="padding:10px; border:1px solid #ddd;">Time Slot</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Teaching Assistant</td>
-            <td style="padding:10px; border:1px solid #ddd;">Help children with reading, writing, and basic subjects.</td>
-            <td style="padding:10px; border:1px solid #ddd;">Mon–Fri, 9AM–12PM</td>
-          </tr>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Creative Arts Mentor</td>
-            <td style="padding:10px; border:1px solid #ddd;">Lead workshops in art, music, dance, or drama.</td>
-            <td style="padding:10px; border:1px solid #ddd;">Wed & Fri, 2PM–4PM</td>
-          </tr>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Farming & Gardening Helper</td>
-            <td style="padding:10px; border:1px solid #ddd;">Assist with planting, harvesting, and garden care.</td>
-            <td style="padding:10px; border:1px solid #ddd;">Mon–Thu, 8AM–10AM</td>
-          </tr>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">Hygiene & Health Awareness</td>
-            <td style="padding:10px; border:1px solid #ddd;">Support sessions on sanitation, wellness, and first aid.</td>
-            <td style="padding:10px; border:1px solid #ddd;">Flexible Days</td>
-          </tr>
-          <tr>
-            <td style="padding:10px; border:1px solid #ddd;">🌍 Weekend Cultural Tour Companion</td>
-            <td style="padding:10px; border:1px solid #ddd;">Explore Uganda with children & volunteers. Visit lakes, villages, and heritage sites.</td>
-            <td style="padding:10px; border:1px solid #ddd;">Sat–Sun, 9AM–5PM</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="grid">
+        <div class="card">
+          <h3>Teaching Assistant</h3>
+          <p>Help children with reading, writing, and basic subjects.</p>
+          <p>Mon–Fri, 9AM–12PM</p>
+        </div>
+        <div class="card">
+          <h3>Creative Arts Mentor</h3>
+          <p>Lead workshops in art, music, dance, or drama.</p>
+          <p>Wed & Fri, 2PM–4PM</p>
+        </div>
+        <div class="card">
+          <h3>Farming & Gardening Helper</h3>
+          <p>Assist with planting, harvesting, and garden care.</p>
+          <p>Mon–Thu, 8AM–10AM</p>
+        </div>
+        <div class="card">
+          <h3>Hygiene & Health Awareness</h3>
+          <p>Support sessions on sanitation, wellness, and first aid.</p>
+          <p>Flexible Days</p>
+        </div>
+        <div class="card">
+          <h3>Weekend Cultural Tour Companion</h3>
+          <p>Explore Uganda with children & volunteers. Visit lakes, villages, and heritage sites.</p>
+          <p>Sat–Sun, 9AM–5PM</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:30px;">
+        <a href="https://wa.me/256788944163" target="_blank" class="donate-button">Join via WhatsApp</a>
+      </div>
     </section>
   </main>
 
-  <!-- ✅ Footer -->
   <footer>
     <p>&copy; 2025 Mayambala Orphanage Center. Volunteers power change. 🕊️</p>
   </footer>
 
-  <!-- ✅ Hamburger Menu Script -->
   <script>
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
-    hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
+    hamburger.addEventListener("click", () => { navLinks.classList.toggle("active"); });
   </script>
 
 </body>
