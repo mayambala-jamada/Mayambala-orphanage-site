@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Navigation -->
   <header>
     <nav class="navbar">
       <div class="logo"><img src="images/logo.png" alt="MoC Logo" /></div>
@@ -24,21 +26,44 @@
   </header>
 
   <main>
-    <section class="text-center" style="padding:60px 20px;">
+    <section class="content-section">
       <h2>📘 Our Programs</h2>
-      <p>We provide education, nutrition, creative arts, hygiene training, and faith-based mentorship to empower children.</p>
-      <a href="donate.html" class="donate-button">Donate Now</a>
+      <p>We provide holistic support for children through education, farming, creative arts, hygiene awareness, and mentorship programs.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>📚 Education Support</h3>
+          <p>School fees, uniforms, and learning materials for over 150 children each term.</p>
+        </div>
+        <div class="card">
+          <h3>🌱 Farming & Nutrition</h3>
+          <p>Community gardens teach children and caregivers sustainable farming for health and learning.</p>
+        </div>
+        <div class="card">
+          <h3>🎨 Creative Arts</h3>
+          <p>Workshops in music, drawing, dance, and storytelling for healing and self-expression.</p>
+        </div>
+        <div class="card">
+          <h3>🧼 Hygiene & Health</h3>
+          <p>Workshops, hygiene kits, and medical guidance for clean and confident children.</p>
+        </div>
+        <div class="card">
+          <h3>🙌 Faith & Mentorship</h3>
+          <p>Weekly spiritual guidance and mentorship to build resilience and moral values.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Mayambala Orphanage Center. Programs built on love, purpose, and impact.</p>
+    <p>&copy; 2025 Mayambala Orphanage Center. Programs built on love and impact.</p>
   </footer>
 
   <script>
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
-    hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
+    hamburger.addEventListener("click", () => { navLinks.classList.toggle("active"); });
   </script>
+
 </body>
 </html>
