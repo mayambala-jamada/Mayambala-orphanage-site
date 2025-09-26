@@ -7,38 +7,63 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-  <nav class="navbar">
-    <div class="logo"><img src="images/logo.png" alt="MoC Logo" /></div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="impact.html">Impact</a></li>
-      <li><a href="volunteer.html">Volunteer</a></li>
-      <li><a href="tour.html">Tour Uganda</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-  </nav>
-</header>
 
-<main>
-  <section class="text-center" style="padding:60px 20px;">
-    <h2>📊 Our Impact</h2>
-    <p>Over 150 children supported, 400+ trees planted, 20 women trained, and international volunteers making a difference.</p>
-    <a href="donate.html" class="donate-button">Donate Now</a>
-  </section>
-</main>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img src="images/logo.png" alt="MoC Logo" /></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="tour.html">Tour Uganda</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+  </header>
 
-<footer>
-  <p>&copy; 2025 Mayambala Orphanage Center. Impact that echoes.</p>
-</footer>
+  <main>
+    <section class="content-section">
+      <h2>📊 Our Impact</h2>
+      <p>Every child we reach, every volunteer who serves, and every seed we plant is part of a bigger story—one of transformation, resilience, and hope.</p>
 
-<script>
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
-hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
-</script>
+      <div class="grid">
+        <div class="card">
+          <h3>🎒 150+ Children in School</h3>
+          <p>Providing school fees, uniforms, and supplies each term.</p>
+        </div>
+        <div class="card">
+          <h3>🌿 400+ Trees Planted</h3>
+          <p>Greening local villages and teaching environmental stewardship.</p>
+        </div>
+        <div class="card">
+          <h3>👩‍🍳 20 Women Trained</h3>
+          <p>Skills in baking, soap-making, and tailoring for income and dignity.</p>
+        </div>
+        <div class="card">
+          <h3>🧼 100+ Hygiene Kits</h3>
+          <p>Supporting health and confidence for children and teens.</p>
+        </div>
+        <div class="card">
+          <h3>🌍 5+ Countries Represented</h3>
+          <p>Volunteers sharing skills, stories, and love from across the world.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mayambala Orphanage Center. Impact that echoes. 🕊️</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => { navLinks.classList.toggle("active"); });
+  </script>
+
 </body>
 </html>
