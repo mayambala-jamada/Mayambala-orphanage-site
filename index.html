@@ -4,7 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome To Mayambala Orphanage Center – Uganda Nonprofit Supporting Vulnerable Children</title>
+  <meta name="description" content="MoC is a faith-driven, community-based orphanage in Kampala, Uganda supporting over 150 vulnerable children through education, arts, farming, and mentorship." />
+  <meta name="keywords" content="Uganda orphanage, volunteer in Africa, nonprofit Kampala, child support programs, faith-based outreach, MoC Uganda, RaiseHopeUganda, eco outreach Uganda" />
+  <meta name="author" content="Mayambala Orphanage Center" />
+
+  <!-- Social Sharing -->
+  <meta property="og:title" content="Hope That Sustains | MoC Uganda" />
+  <meta property="og:description" content="Join #RaiseHopeUganda to uplift lives and landscapes through child empowerment and sustainable outreach in Uganda." />
+  <meta property="og:image" content="images/hero-home.jpg" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hope That Sustains | MoC Uganda" />
+  <meta name="twitter:description" content="Empowering orphaned children while protecting the planet they call home." />
+  <meta name="twitter:image" content="images/hero-home.jpg" />
+
+  <!-- Styles & Branding -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -12,14 +30,16 @@
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="images/logo.png" alt="MoC Logo" />
+        <a href="index.html">
+          <img src="images/logo.png" alt="MoC Uganda Logo" />
+        </a>
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="programs.html">Programs</a></li>
         <li><a href="impact.html">Impact</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="#" id="openModal">Volunteer</a></li>
         <li><a href="tour.html">Tour Uganda</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -31,57 +51,107 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <h1>Empowering Orphaned Children in Uganda</h1>
-    <p>Mayambala Orphanage Center (MoC) is a faith-driven, community-rooted nonprofit providing education, shelter, mentorship, and creative space for over 150 vulnerable children in Kampala.</p>
-    <p>MoC isn’t powered by one—it’s driven by many.</p>
-  </section>
+  <!-- Main Content -->
+  <main>
 
-  <!-- RaiseHopeUganda Campaign -->
-  <section class="text-center">
-    <h2>Hope That Sustains</h2>
-    <p>Join <strong>#RaiseHopeUganda</strong> as we nurture brighter futures—empowering vulnerable children while restoring the planet they call home. Together, we plant more than trees. We plant hope.</p>
-    <a href="donate.html" class="donate-button">Support the Movement</a>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <h1>Empowering Orphaned Children in Uganda</h1>
+      <p>
+        Mayambala Orphanage Center (MoC) is a faith-driven, community-rooted nonprofit providing education, shelter, mentorship, and creative space for over 150 vulnerable children in Kampala.
+      </p>
+      <p>MoC isn’t powered by one—it’s driven by many.</p>
+      <img src="images/hero-home.jpg" alt="Children smiling at MoC" style="max-width:100%; height:auto; border-radius:10px; margin-top:20px;" />
+    </section>
 
-  <!-- Recent Stories -->
-  <section>
-    <h2>📰 Recent Stories</h2>
-    <div class="card">
-      <h3>📅 20 Children Enrolled This Term</h3>
-      <p>Thanks to your support, 20 children returned to school this year with books, uniforms, and hope.</p>
-      <small><em>Posted: July 4, 2025</em></small>
-    </div>
-    <div class="card">
-      <h3>🌱 400 Trees Planted</h3>
-      <p>Volunteers and children planted 400 trees in our green outreach mission across 3 villages.</p>
-      <small><em>Posted: June 22, 2025</em></small>
-    </div>
-    <div class="card">
-      <h3>👩‍🍳 Women Empowerment Skills</h3>
-      <p>20 caregivers are learning soap-making, baking, and tailoring. They are aiming graduation—earning income and confidence.</p>
-      <small><em>Posted: May 30, 2025</em></small>
-    </div>
-  </section>
+    <!-- RaiseHopeUganda Campaign -->
+    <section id="hero-banner" class="homepage-banner text-center">
+      <h2>Hope That Sustains</h2>
+      <p>
+        Join <strong>#RaiseHopeUganda</strong> as we nurture brighter futures—empowering vulnerable children while restoring the planet they call home. Together, we plant more than trees. We plant hope.
+      </p>
+      <a href="donate.html" class="donate-button">Support the Movement</a>
+    </section>
 
-  <!-- Call to Action -->
-  <section class="text-center">
-    <p>💙 Want to support our mission or join hands?</p>
-    <p>Volunteers aren't helpers—they’re builders of change.</p>
-    <a href="donate.html" class="donate-button">Donate Now</a>
-  </section>
+    <!-- Recent Blog Stories -->
+    <section id="blog" class="text-center">
+      <h2>📰 Recent Stories</h2>
+      <div class="card">
+        <h3>📅 20 Children Enrolled This Term</h3>
+        <p>Thanks to your support, 20 children returned to school this year with books, uniforms, and hope.</p>
+        <small><em>Posted: July 4, 2025</em></small>
+      </div>
+
+      <div class="card">
+        <h3>🌱 400 Trees Planted</h3>
+        <p>Volunteers and children planted 400 trees in our green outreach mission across 3 villages.</p>
+        <small><em>Posted: June 22, 2025</em></small>
+      </div>
+
+      <div class="card">
+        <h3>👩‍🍳 Women Empowerment Skills</h3>
+        <p>20 caregivers are learning soap-making, baking, and tailoring. They are aiming graduation—earning income and confidence.</p>
+        <small><em>Posted: May 30, 2025</em></small>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="text-center">
+      <p>💙 Want to support our mission or join hands?</p>
+      <p>Volunteers aren't helpers—they’re builders of change.</p>
+      <a href="donate.html" class="donate-button">Donate Now</a>
+    </section>
+
+  </main>
+
+  <!-- Volunteer Modal -->
+  <div id="volunteerModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Volunteer Sign-Up</h2>
+      <p>Thank you for your interest in volunteering! Please fill out your details and we'll get in touch.</p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Why you want to volunteer" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Mayambala Orphanage Center. Built on faith, fueled by community. 🕊️</p>
   </footer>
 
-  <!-- Hamburger Script -->
+  <!-- Scripts -->
   <script>
+    // Hamburger Toggle
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("navLinks");
-    hamburger.addEventListener("click", () => navLinks.classList.toggle("active"));
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Volunteer Modal
+    const openModal = document.getElementById("openModal");
+    const closeModal = document.getElementById("closeModal");
+    const modal = document.getElementById("volunteerModal");
+
+    openModal.addEventListener("click", (e) => {
+      e.preventDefault();
+      modal.style.display = "flex";
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    window.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
   </script>
 
 </body>
